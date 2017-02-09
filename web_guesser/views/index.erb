@@ -3,6 +3,21 @@
 <body>
 	<p>
 		the number is <%= number %>
+		the guess is 
+		<% guess = params['guess'].to_i %>
+		<% case  
+			 when guess < number %>
+			  too low
+		<% when guess > number %>
+				too high
+		<% when guess == number %>
+				correct!
+		<% end %>
 	</p>
+	<p>
+	<form>
+		<input type="text" name="guess" />
+		<input type="submit" value="Guess!" />
+	</form>
 </body>
 </html>

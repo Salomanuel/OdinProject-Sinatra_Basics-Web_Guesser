@@ -1,5 +1,15 @@
 <html>
-<head></head>
+<head>
+	<style>
+		<% if guess == number %>
+			p {background: #0f0; color:#fff;}
+		<% elsif  (guess-number).abs < 3 %>
+			p {background: #a00;}
+		<% elsif guess != number %>
+			p {background: red;}
+		<% end %>
+	</style>
+</head>
 <body>
 	<p>
 		the guess is <%= message %>

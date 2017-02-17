@@ -3,6 +3,7 @@ require 'sinatra/reloader'
 
 get "/" do
 	@title = "voting page"
+	@vote  = params['vote']
 	erb :index
 end
 

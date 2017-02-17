@@ -1,5 +1,17 @@
 <p>main page</p>
 
+<form>
+	<ul>
+		<% Choices.each do |id, text| %>
+			<li>
+				<input type="radio" name="vote" />
+				<%= text %>
+			</li>
+		<% end %>
+	</ul>
+	<button type="submit">Vote!</button>
+</form>
+
 <table>
 <% Choices.each do |id, name| %>
 <tr>

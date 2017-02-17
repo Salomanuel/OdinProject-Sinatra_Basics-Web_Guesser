@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suffragist</title>
+</head>
+<body>
+	<h1><%= @title %></h1>
+	<p>What's for dinner?</p>
+	<form action='cast' method='post'>
+		<ul>
+			<% Choices.each do |id, text| %>
+				<li>
+						<input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
+						<%= text %>
+				</li>
+			<% end %>
+		</ul>
+		<button type='submit'>Cast this vote!</button>
+	</form>
+</body>
+</html>

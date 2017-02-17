@@ -2,5 +2,6 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get "/" do
-	"hey there"
+	@title = "voting page"
+	erb :index
 end

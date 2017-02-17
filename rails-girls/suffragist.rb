@@ -3,7 +3,14 @@ require 'sinatra/reloader'
 
 get '/' do
 	@title = "Welcome to the Suffragist!"
-	erb :index
+	@vote  = params['vote']
+	erb :index, 	layout: :main
+end
+
+post '/cast' do
+	@title = "Thanks for casting your vote!"
+	@vote = params['vote']
+	erb :cast, 		layout: :main
 end
 
 

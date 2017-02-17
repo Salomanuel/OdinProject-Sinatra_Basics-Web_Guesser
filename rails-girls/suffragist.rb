@@ -7,6 +7,11 @@ get "/" do
 	erb :index
 end
 
+get "/results" do
+	@title = "results"
+	@vote  = params["vote"]
+	erb :results
+end
 
 Choices = {
 	"P-F" => "Prosciutto e Funghi",

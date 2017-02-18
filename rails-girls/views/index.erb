@@ -1,1 +1,11 @@
-<p>this is index</p>
+<form action="cast" method="post">
+	<ul>
+		<% Choices.each do |id, text| %>
+			<li>
+				<input type="radio" name="vote" value="<%= id %>" id="vote_<%= id %>" />
+				<%= text %>
+			</li>
+		<% end %>
+	</ul>
+	<button type="submit">Vote already</button>
+</form>

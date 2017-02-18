@@ -13,6 +13,13 @@ get "/results" do
 	erb :results
 end
 
+post "/cast" do
+	@title = "thanks for voting"
+	@vote  = params["vote"]
+	erb :cast
+end
+
+
 Choices = {
 	"P-F" => "Prosciutto e Funghi",
 	"MAR" => "Margherita",

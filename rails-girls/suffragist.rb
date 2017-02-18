@@ -13,6 +13,12 @@ post '/cast' do
 	erb :cast, 		layout: :main
 end
 
+get "/results" do
+	@votes = { "HAM" => 6, "PIZ" => 4, "CUR" => 1 }
+	@title = "results"
+	erb :results
+end
+
 
 Choices = {
 	"HAM" => "Hamburger",

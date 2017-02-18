@@ -12,6 +12,12 @@ post "/cast" do
 	erb :cast
 end
 
+get "/results" do
+	@title = "results"
+	@votes = { 1 => 7, 2 => 5, 3 => 3 }
+	erb :results
+end
+
 Choices = {
 	1 => "uno",
 	2 => "due",

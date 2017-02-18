@@ -1,0 +1,10 @@
+<table>
+	<% Choices.each do |id, text| %>
+	<tr>
+		<th><%=text%></th>
+		<td><%= @votes[id] %></td>
+		<td><%= "#" * (@votes[id]) %></td>
+	</tr>
+	<% end %>
+</table>
+<p><a href="/">Back to voting</a></p>

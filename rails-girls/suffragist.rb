@@ -6,6 +6,12 @@ get "/" do
 	erb :index
 end
 
+post "/cast" do
+	@title = "casting page"
+	@vote  = params["vote"]
+	erb :cast
+end
+
 Choices = {
 	1 => "uno",
 	2 => "due",

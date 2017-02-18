@@ -3,7 +3,7 @@
 	<ul>
 		<% Choices.each do |id, text| %>
 			<li>
-				<input type="radio" name = "vote" value = <%= id %> />
+				<input type="radio" name="vote" value="<%= id %>" id="vote_<%= id %>" />
 				<%= text %>
 			</li>
 		<% end %>

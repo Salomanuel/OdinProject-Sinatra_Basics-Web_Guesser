@@ -1,6 +1,6 @@
 Course List >> Ruby on Rails >> Sinatra >> [1: Sinatra Basics](http://www.theodinproject.com/courses/ruby-on-rails/lessons/sinatra-basics?ref=lc-pb)
 
-#Sinatra
+# Sinatra
 
 One of the biggest frustrations beginners have with learning Rails is getting their head around all the 'magic' that Rails seems to do.
 
@@ -10,14 +10,15 @@ Sinatra is a small light weight web framework written in Ruby. It allows you to 
 
 Sinatra does a few of the same things that Rails does, but it doesn't create the file-structure for you. The benefit of doing it yourself (and the main reason we're learning this at all) is that once you get a feel for how to set up routes and organize your views in Sinatra, the complex file structures and methods in Rails will start to make a whole lot more sense.
 
-There isn't a whole lot to Sinatra so you can learn it pretty quickly, but as you will see you can build very impressive apps with it.
-##Prerequisites
+There isn't a whole lot to Sinatra so you can learn it pretty quickly, but as you will see you can build very impressive apps with it.   
+
+## Prerequisites
 
 Sintra requires basic ruby knowledge and the projects after this lesson will build upon two of the early projects from the Ruby course.
 
 - You have completed at least up to the "Ruby on the web" section on the Ruby Programming course
 
-##Points to Ponder
+## Points to Ponder
 
 Look through these now and then use them to test yourself after doing the assignment
 
@@ -25,10 +26,10 @@ Look through these now and then use them to test yourself after doing the assign
 - What are views?
 - what are sessions in Sinatra, and how do you use them?
 
-##Your Assignment
+## Your Assignment
 
 1. Go to the Sinatra website and follow the (somewhat cryptic) instructions right on their front page:
-    1. create a file called hi.rb with the following code:
+    1. create a file called `hi.rb` with the following code:
 
 
         ```ruby
@@ -46,7 +47,7 @@ Look through these now and then use them to test yourself after doing the assign
 
 3. Take a look at the Sinatra README and read through the first eight sections of it ( until section 8, "Helpers").Almost everything you will need to know about Sinatra is right here on this page so use it as a reference when you are working through the project.
 
-##Additional Resources
+## Additional Resources
 
 This section contains helpful links to other content. It isn't required, so consider it supplemental for if you need to dive deeper into something
 

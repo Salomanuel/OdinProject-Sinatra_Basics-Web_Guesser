@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
+	@@rando = rand(100)
 
 get '/' do
-	@@rando = rand(100)
 	erb :index
 end

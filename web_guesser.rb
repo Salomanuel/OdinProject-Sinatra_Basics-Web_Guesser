@@ -1,9 +1,8 @@
 require 'sinatra'
+require 'sinatra/reloader'
+
+@@rando = rand(100)
 
 get '/' do
-	"The secret number is #{rando}"
-end
-
-def rando
-	return rand(100)
+	"The secret number is #{@@rando}"
 end

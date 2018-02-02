@@ -1,5 +1,9 @@
 require 'sinatra'
 
 get '/' do
-	"Hello, World!"
+	"The secret number is #{rando}"
+end
+
+def rando
+	return rand(100)
 end

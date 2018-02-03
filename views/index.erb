@@ -1,10 +1,10 @@
 <html>
 <head></head>
 <body>
+	<p> <%= rando  if cheat %> </p>
+	<p> <%= answer if answer %> </p>
 
-	<p> <%= @@answer if @@answer %> </p>
-
-	<p>	<% "The secret number is #{@@rando}" %> </p>
+	<p>	<% "The secret number is #{rando}" %> </p>
 
 	<form>
 		<input type='text' name='guess' />
